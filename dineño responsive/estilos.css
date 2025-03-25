@@ -1,0 +1,73 @@
+/*TIPOS DE LETRA DE LA TARJETA*/
+@font-face {
+    font-family: "letra-titulo";
+    src: url("./fonts/GrowWest-Regular.ttf");
+}
+@font-face {
+    font-family: "letra-texto";
+    src: url("./fonts/Idealy.ttf");
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "letra-titulo";
+    font-size: 30px;
+}
+p,span,a{
+    font-family: "letra-texto";
+    font-size: 18px;
+}
+
+
+/*estilos de galeria*/
+#s1{
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+}
+.content-galery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-galery h2{
+    margin: 20px 0;
+}
+.content-galery div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.content-galery div img{
+    width: 320px;
+    height:320px;
+}
+/*MEDIDAS PARA PC PORTATIL*/
+@media (min-width: 1081px) and (max-width: 1320px) {
+    #s1{
+        height: auto;
+    }
+    .content-galery div{
+        gap: 15px
+    }
+    .content-galery div img{
+        width: 250px;
+        height: auto;
+    }
+}
+/*MEDIDAPARA TABLET*/
+@media (min-width: 561px) and (max-width: 1080px){
+    #s1{
+        height: auto;
+    }
+}
+/*MEDIDAPARA CELULAR*/
+@media (max-width: 560px){
+    #s1{
+        height: auto;
+    }
+}
